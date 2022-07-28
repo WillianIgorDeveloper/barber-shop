@@ -8,6 +8,7 @@
 :root {
     /*===== Colors =====*/
     --white: #fff;
+    --gray: gray;
     --black: #191919;
     --brown-50: #917758;
     --brown-100: #3c2915;    
@@ -23,11 +24,10 @@
     list-style: none;
     text-decoration: none;
     background-repeat: no-repeat;
-}
-body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--white);
+    scroll-behavior: smooth;
 }
 img {
     width: 100%;
@@ -94,7 +94,6 @@ img {
         }
         .home-content span {
             text-transform: uppercase;
-            font-weight: 400;
             color: var(--brown-50);
             font-size: 1rem;
             letter-spacing: .25rem;
@@ -107,6 +106,65 @@ img {
             margin-top: 15px;
             width: 50px;
         }
+    /*===== About =====*/
+    .about {
+        background-color: var(--brown-50);
+    }
+    .about .container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 50px 0;
+        position: relative;
+    }
+    .schedules-card-outer {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        background-image: url('../assets/img/brush-big.jpg');
+        background-size: cover;
+        padding: 20px;
+    }
+    .schedules-card {
+        background-color: rgba(0, 0, 0, 0.85);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding: 50px 60px;
+    }
+    .schedules-card header img {
+        width: 50px;
+    }
+    .schedules-card header span {
+        font-weight: 700;
+        color: var(--brown-50);
+        font-size: 2.25rem;
+        border-bottom: 1px solid var(--brown-50);
+    }
+    .schedules-card .text-tontainer span:first-child {
+        color: var(--gray);
+    }
+    .schedules-card .text-tontainer img {
+        width: 30px;
+    }
+    .about .text-container {
+        width: 40%;
+    }
+    .about .text-container h2 {
+        font-size: 2.5rem;
+    }
+    .about .text-container h2 span {
+        font-size: 1rem;
+    }
+    .about .text-container p {
+        font-size: 1.1rem;
+        margin: 20px 0;
+    }
+    .about img {
+        align-self: flex-end;
+        width: 280px;
+    }
 
 
 

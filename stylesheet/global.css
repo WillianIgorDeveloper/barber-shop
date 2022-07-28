@@ -1,0 +1,113 @@
+/*==================== 
+    Stylization Just Desktop
+====================*/
+
+
+
+/*========== Variables ==========*/
+:root {
+    /*===== Colors =====*/
+    --white: #fff;
+    --black: #191919;
+    --brown-50: #917758;
+    --brown-100: #3c2915;    
+}
+
+
+
+/*========== Global ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*========== Components ==========*/
+    /*===== Container =====*/
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+
+
+/*========== Main ==========*/
+    /*===== Home =====*/
+    .home {
+        background-image: url('../assets/img/bg-home.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+        /* Header */
+        .header {
+            padding: 15px;
+        }
+        .nav-header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav-header ul {
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+        }
+        .nav-header img {
+            width: 150px;
+        }
+        .nav-header ul li a {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: .75rem;
+            color: var(--white);
+            padding: 16px;
+        }
+        .nav-header ul li a:hover {
+            color: var(--brown-50);
+            border-bottom: 1px solid var(--brown-50);
+        }
+        /* Content */
+        .home-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-content span {
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--brown-50);
+            font-size: 1rem;
+            letter-spacing: .25rem;
+        }
+        .home-content h1 {
+            font-weight: 700;
+            font-size: 8rem;
+        }
+        .home-content img {
+            margin-top: 15px;
+            width: 50px;
+        }
+
+
+
+/*========== # ==========*/

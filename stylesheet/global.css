@@ -130,8 +130,8 @@ img {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 35px;
-        padding: 50px 60px;
+        gap: 20px;
+        padding: 50px 50px;
     }
     .schedules-card header img {
         width: 50px;
@@ -142,17 +142,28 @@ img {
         font-size: 2.25rem;
         border-bottom: 1px solid var(--brown-50);
     }
-    .schedules-card .text-tontainer span:first-child {
+    .schedules-card .text-container span:first-child {
         color: var(--gray);
     }
-    .schedules-card .text-tontainer img {
+    .schedules-card .text-container img {
         width: 30px;
     }
-    .about .text-container {
+    .about .container > .text-container {
         width: 40%;
     }
     .about .text-container h2 {
         font-size: 2.5rem;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .about .text-container h2::after {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background-color: #a18b6d;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
     .about .text-container h2 span {
         font-size: 1rem;
@@ -164,6 +175,17 @@ img {
     .about img {
         align-self: flex-end;
         width: 280px;
+    }
+    .bullet{
+        width: 6px;
+        height: 6px;
+        background-color: var(--white);
+        border-radius: 100%;
+    }
+    .collum {
+        width: 3px;
+        height: 25px;
+        background-color: var(--white);
     }
 
 
